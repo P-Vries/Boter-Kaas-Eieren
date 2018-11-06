@@ -187,7 +187,7 @@ namespace BterKaasEieren
             {
                 MessageBox.Show("Hoera, Speler 1 heeft gewonnen.");
             }
-            else
+            else if(btnPlayer2.BackColor == winKleur)
             {
                 MessageBox.Show("Hoera, Speler 2 heeft gewonnen.");
 
@@ -204,6 +204,8 @@ namespace BterKaasEieren
             btnPlayer1.BackColor = Color.Gray;
             btnPlayer2.BackColor = Color.Gray;
             BO = 0;
+            speler1Kleur = btnPlayer1.BackColor;
+            speler2Kleur = btnPlayer2.BackColor;
         }
         private void btnPlayer1_Click(object sender, EventArgs e)
         {
